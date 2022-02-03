@@ -18,6 +18,22 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
 .flex {
   display: flex;
 
@@ -25,7 +41,23 @@ body {
     justify-content: center;
   }
 
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
   &-ai-c {
     align-items: center;
+  }
+}
+
+.hide-for-desktop {
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+}
+
+.hide-for-mobile {
+  @media screen and (max-width: 1000px) {
+    display: none;
   }
 }

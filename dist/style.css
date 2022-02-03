@@ -18,6 +18,22 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,9 +46,107 @@ body {
           justify-content: center;
 }
 
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .flex-ai-c {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.header__nav {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 40px 35px;
+  background-color: transparent;
+}
+
+.header__img {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.header .navigation {
+  font-family: "Barlow";
+}
+
+.header .navigation a {
+  color: white;
+}
+
+.header .navigation a:not(:last-child) {
+  margin-right: 45px;
+  font-size: 18px;
+}
+
+.header__cta {
+  padding: 18px 28px;
+  border-radius: 30px;
+  font-family: "Fraunces";
+  background-color: white;
+  color: #19536b !important;
+}
+
+.header__text {
+  position: absolute;
+  top: 16.5vh;
+  z-index: 1;
+  font-family: "Fraunces";
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: 900;
+  font-size: 4.3vw;
+  color: white;
+}
+
+.header__icon {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1000px) {
+  .header__nav {
+    padding: 25px 20px;
+  }
+  .header__text {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+  .header__icon {
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
