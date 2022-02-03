@@ -1,0 +1,31 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"); // [Barlow] 600
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap"); // [Fraunces] 700 900
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
