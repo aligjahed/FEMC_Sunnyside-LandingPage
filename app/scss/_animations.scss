@@ -1,0 +1,77 @@
+@keyframes open-menu-icon {
+  from {
+    height: 18px;
+    width: 24px;
+    background-color: transparent;
+  }
+
+  to {
+    width: 24px;
+    height: 5px;
+    background-color: $white;
+  }
+}
+
+@keyframes close-menu-icon {
+  from {
+    height: 5px;
+    width: 24px;
+    background-color: $white;
+  }
+
+  to {
+    height: 18px;
+    width: 24px;
+    background-color: transparent;
+  }
+}
+
+@keyframes open-menu {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 100%;
+  }
+}
+
+@keyframes close-menu {
+  0% {
+    visibility: visible;
+    opacity: 100%;
+  }
+
+  99% {
+    visibility: visible;
+    opacity: 0%;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0%;
+  }
+}
+
+.menu-icon-open {
+  animation: open-menu-icon 200ms ease-in-out forwards;
+}
+
+.menu-icon-close {
+  animation: close-menu-icon 200ms ease-in-out forwards;
+}
+
+.menu-open {
+  animation: open-menu 200ms ease-in-out forwards;
+}
+
+.menu-close {
+  animation: close-menu 200ms ease-in-out forwards;
+}
