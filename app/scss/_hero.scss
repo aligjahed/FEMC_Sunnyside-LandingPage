@@ -154,6 +154,10 @@
       padding: 165px;
 
       text-align: left;
+
+      h3:hover {
+        cursor: pointer;
+      }
     }
 
     &__reviews {

@@ -1,0 +1,59 @@
+.footer {
+  padding: 50px 30px;
+
+  background-color: $footer;
+
+  &__logo {
+    margin-bottom: 35px;
+    width: 100%;
+
+    height: 30px;
+    background-color: $darkDesaturatedCyan;
+    mask: url(/images/logo.svg) no-repeat center;
+  }
+
+  &__links {
+    margin-bottom: 70px;
+
+    a {
+      color: $darkModerateCyan;
+      font-family: "Barlow";
+      font-size: 18px;
+
+      &:not(:last-child) {
+        margin-right: 45px;
+      }
+    }
+  }
+
+  &__social {
+    .social-icon {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer {
+    padding: 70px 560px;
+
+    &__logo {
+      width: 170px;
+    }
+
+    &__links {
+      a:hover {
+        color: $white;
+      }
+    }
+
+    &__social {
+      img:hover {
+        cursor: pointer;
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
