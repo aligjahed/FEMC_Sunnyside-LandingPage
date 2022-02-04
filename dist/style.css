@@ -56,6 +56,11 @@ p {
           justify-content: space-between;
 }
 
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .flex-ai-c {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -371,6 +376,29 @@ p {
   position: relative;
 }
 
+.hero__reviews {
+  padding: 50px 35px;
+}
+
+.hero__reviews h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 900;
+  font-family: "Fraunces";
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: #a7abae;
+}
+
+.hero__gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
 .holder__text {
   padding: 50px 20px;
   text-align: center;
@@ -395,8 +423,45 @@ p {
   color: #25564b;
 }
 
+.photography {
+  color: #23303e;
+}
+
+.review__box {
+  text-align: center;
+}
+
+.review__box:not(:last-child) {
+  margin-bottom: 55px;
+}
+
+.review__img {
+  margin-bottom: 35px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.review__text {
+  margin-bottom: 35px;
+  font-family: "Barlow";
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5a636c;
+}
+
+.review__name {
+  margin-bottom: 15px;
+  font-family: "Fraunces";
+  color: #23303e;
+}
+
+.review__role {
+  font-family: "Barlow";
+  color: #a7abae;
+}
+
 @media screen and (min-width: 1000px) {
-  .hero {
+  .hero__grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -421,8 +486,38 @@ p {
     padding: 165px;
     text-align: left;
   }
+  .hero__reviews {
+    padding: 160px 170px;
+  }
+  .hero__reviews h2 {
+    margin-bottom: 80px;
+  }
+  .hero__gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+  }
   .holder__text {
     padding: 60px 195px;
+  }
+  .review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .review__box {
+    text-align: center;
+  }
+  .review__box:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 
