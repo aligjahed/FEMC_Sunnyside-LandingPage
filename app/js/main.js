@@ -3,7 +3,6 @@ console.log("Js is working");
 
 const menu_icon = document.querySelector(".header__menu-icon");
 const menu = document.querySelector(".header__menu");
-const html = document.getElementsByTagName("html");
 
 menu_icon.addEventListener("click", function () {
   if (menu_icon.classList.contains("menu-icon-close")) {
@@ -13,7 +12,7 @@ menu_icon.addEventListener("click", function () {
     menu.classList.add("menu-open");
     menu.classList.remove("menu-close");
 
-    html.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
   } else {
     menu_icon.classList.add("menu-icon-close");
     menu_icon.classList.remove("menu-icon-open");
@@ -21,6 +20,6 @@ menu_icon.addEventListener("click", function () {
     menu.classList.remove("menu-open");
     menu.classList.add("menu-close");
 
-    html.style.overflow = "";
+    document.body.style.overflow = "auto";
   }
 });

@@ -29,8 +29,12 @@ h4 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -63,5 +67,11 @@ h4 {
 .hide-for-mobile {
   @media screen and (max-width: 1000px) {
     display: none;
+  }
+}
+
+.noscroll {
+  html {
+    overflow: none;
   }
 }
